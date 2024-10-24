@@ -1,5 +1,28 @@
-.bg{
+/* .bg{
     height: 90vh;
     background-image: url("../imgs/Mask\ Group.jpg");
     background-size: cover;
-}
+} */
+ .icn{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background-color: rgb(237, 230, 230);
+    
+ }
+ .slid{
+     height:60px;
+      width: 60px; 
+      border-radius: 100%;
+      background-color:orangered;
+      filter: none !important;
+ }
+ .cl-org{
+    background-color: orangered;
+ }
+ .text-org{
+   color: orangered;
+ }
+ .grey{
+   color: grey;
+ }
