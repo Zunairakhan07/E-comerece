@@ -26,3 +26,11 @@
  .grey{
    color: grey;
  }
+ b-grey{
+  background-color: grey;
+ }
+ .bg-img{
+  background-image: url("../imgs/counter.jpg");
+  background-size: cover;
+
+ }
