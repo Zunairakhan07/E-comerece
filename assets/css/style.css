@@ -3,6 +3,9 @@
     background-image: url("../imgs/Mask\ Group.jpg");
     background-size: cover;
 } */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inconsolata:wght@200..900&display=swap');
+
  .icn{
     height: 40px;
     width: 40px;
@@ -34,3 +37,37 @@
   background-size: cover;
 
  }
+ .custom-btn-container {
+  position: relative;
+  display: inline-block;
+}
+
+.btn-outline-box {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #FF5B4D; /* Red outline */
+  z-index: 0;
+}
+
+.custom-btn {
+  background-color: #FF5B4D; /* Red background */
+  color: white; /* White text */
+  padding: 10px 20px;
+  border: none;
+  /* position: relative; */
+  z-index: 1; /* Ensure it is above the border box */
+}
+
+.custom-btn:hover {
+  background-color: #FF3B2D; /* Darker red on hover */
+}
+.top-content{
+  top: -450px;
+  left: 450px;
+}
+.font{
+  font-family: "Archivo Black", sans-serif;
+}
