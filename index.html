@@ -13,7 +13,7 @@
 <body>
   <!-- Nav Section  -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary pt-3">
-    <div class="container">
+    <div class="container ">
       <img src="./assets/imgs/e-logo.png">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,7 +105,9 @@
           <div class="d-flex justify-content-end top-content position-absolute">
             <div class="text-start ">
               <p class="fw-bold fs-5 grey">Trendy Dress</p>
-              <h1 class="display-1 fw-bold font"><div class="text-org">Winter</div>Collection</h1>
+              <h1 class="display-1 fw-bold font">
+                <div class="text-org">Winter</div>Collection
+              </h1>
               <div class="custom-btn-container mt-5">
                 <div class="btn-outline-box"></div>
                 <button class="custom-btn fw-bold  p-3 px-5">Shop Now</button>
@@ -140,7 +142,9 @@
           <div class="d-flex justify-content-end  top-content position-absolute">
             <div class="text-start">
               <p class="fw-bold grey fs-5">Winter Collection Sale</p>
-              <h1 class="display-1 fw-bold font"><div class="text-org">Classic</div>Style</h1>
+              <h1 class="display-1 fw-bold font">
+                <div class="text-org">Classic</div>Style
+              </h1>
               <div class="custom-btn-container mt-5">
                 <div class="btn-outline-box"></div>
                 <button class="custom-btn fw-bold p-3 px-5">Shop Now</button>
@@ -228,21 +232,21 @@
   <div class="container mt-2">
     <div class="row">
       <div class="col-md-3">
-        <img src="./assets/imgs/111--.jpg" class="img-fluid mt-5">
+        <img src="./assets/imgs/111--.jpg" id="hoverImage" class="img-fluid mt-5">
         <div class="text-center mt-2">
           <h6>Floral Kirby</h6>
           <p>$329.10</p>
         </div>
       </div>
       <div class="col-md-3">
-        <img src="./assets/imgs/222.jpg" class="img-fluid mt-5" alt="">
+        <img src="./assets/imgs/222.jpg" id="hoverImage1" class="img-fluid mt-5" alt="">
         <div class="text-center mt-2">
           <h6>Floral Kirby</h6>
           <p>$329.10</p>
         </div>
       </div>
       <div class="col-md-3">
-        <img src="./assets/imgs/444.jpg" class="img-fluid mt-5" alt="">
+        <img src="./assets/imgs/444.jpg" id="hoverImage2" class="img-fluid mt-5" alt="">
         <div class="text-center mt-2">
           <h6>Floral Kirby</h6>
           <p>$329.10</p>
@@ -251,35 +255,35 @@
       </div>
       <div class="col-md-3">
 
-        <img src="./assets/imgs/322.jpg" class="img-fluid mt-5" alt="">
+        <img src="./assets/imgs/322.jpg" id="hoverImage3" class="img-fluid mt-5" alt="">
         <div class="text-center mt-2">
           <h6>Floral Kirby</h6>
           <p>$329.10</p>
         </div>
       </div>
       <div class="col-md-3">
-        <img src="./assets/imgs/444.jpg" class="img-fluid mt-5" alt="">
+        <img src="./assets/imgs/444.jpg" id="hoverImage4" class="img-fluid mt-5" alt="">
         <div class="text-center mt-2">
           <h6>Floral Kirby</h6>
           <p>$329.10</p>
         </div>
       </div>
       <div class="col-md-3">
-        <img src="./assets/imgs/322.jpg" class="img-fluid mt-5" alt="">
+        <img src="./assets/imgs/322.jpg" id="hoverImage5" class="img-fluid mt-5" alt="">
         <div class="text-center mt-2">
           <h6>Floral Kirby</h6>
           <p>$329.10</p>
         </div>
       </div>
       <div class="col-md-3">
-        <img src="./assets/imgs/111--.jpg" class="img-fluid mt-5" alt="">
+        <img src="./assets/imgs/111--.jpg" id="hoverImage6" class="img-fluid mt-5" alt="">
         <div class="text-center mt-2">
           <h6>Floral Kirby</h6>
           <p>$329.10</p>
         </div>
       </div>
       <div class="col-md-3 ">
-        <img src="./assets/imgs/222.jpg" class="img-fluid mt-5" alt="">
+        <img src="./assets/imgs/222.jpg" id="hoverImage7" class="img-fluid mt-5" alt="">
         <div class="text-center mt-2">
           <h6>Floral Kirby</h6>
           <p>$329.10</p>
@@ -297,7 +301,7 @@
             <span class="h5 deal bg-light px-2">Deal of the day 50% Off</span>
             <h2 class="mt-3 text-white  display-2 fw-bold">Trendy Suit</h2>
             <p class="text-md mt-3 text-white">Hurry up! Limited time offer.Grab ot now!</p>
-            <p >The countdown is finished!</p>
+            <p>The countdown is finished!</p>
             <a href="#" class=" cl-org text-white fw-bold text-decoration-none px-4 py-2  ">Shop now</a>
           </div>
         </div>
@@ -569,6 +573,88 @@
 
 
   <script src="./assets/js//bootstrap.min.js"></script>
+  <script>
+
+    const image = document.getElementById('hoverImage');
+    const originalSrc = 'assets/js/111--.jpg';
+    const hoverSrc = 'assets/imgs/444.jpg';
+    image.addEventListener('mouseover', () => {
+      image.src = hoverSrc;
+    });
+    image.addEventListener('mouseout', () => {
+      image.src = originalSrc;
+    });
+    const image1 = document.getElementById('hoverImage1');
+    const originalSrc1 = 'assets/js/222--.jpg';
+    const hoverSrc1 = 'assets/imgs/322.jpg';
+    image1.addEventListener('mouseover', () => {
+      image1.src = hoverSrc1;
+    });
+    image.addEventListener('mouseout', () => {
+      image1.src = originalSrc1;
+    });
+
+    const image2 = document.getElementById('hoverImage2');
+    const originalSrc2 = 'assets/js/444--.jpg';
+    const hoverSrc2 = 'assets/imgs/222.jpg';
+    image2.addEventListener('mouseover', () => {
+      image2.src = hoverSrc2;
+    });
+    image.addEventListener('mouseout', () => {
+      image2.src = originalSrc2;
+    });
+
+    const image3 = document.getElementById('hoverImage3');
+    const originalSrc3 = 'assets/js/111--.jpg';
+    const hoverSrc3 = 'assets/imgs/444.jpg';
+    image3.addEventListener('mouseover', () => {
+      image3.src = hoverSrc3;
+    });
+    image3.addEventListener('mouseout', () => {
+      image3.src = originalSrc3;
+    });
+
+    const image4 = document.getElementById('hoverImage4');
+    const originalSrc4 = 'assets/js/111--.jpg';
+    const hoverSrc4 = 'assets/imgs/444.jpg';
+    image4.addEventListener('mouseover', () => {
+      image4.src = hoverSrc4;
+    });
+    image4.addEventListener('mouseout', () => {
+      image4.src = originalSrc4;
+    });
+
+    const image5 = document.getElementById('hoverImage5');
+    const originalSrc5 = 'assets/js/111--.jpg';
+    const hoverSrc5 = 'assets/imgs/444.jpg';
+    image5.addEventListener('mouseover', () => {
+      image5.src = hoverSrc5;
+    });
+    image5.addEventListener('mouseout', () => {
+      image5.src = originalSrc5;
+    });
+
+    const image6 = document.getElementById('hoverImage6');
+    const originalSrc6 = 'assets/js/111--.jpg';
+    const hoverSrc6 = 'assets/imgs/444.jpg';
+    image6.addEventListener('mouseover', () => {
+      image6.src = hoverSrc6;
+    });
+    image6.addEventListener('mouseout', () => {
+      image6.src = originalSrc6;
+    });
+
+    const image7 = document.getElementById('hoverImage7');
+    const originalSrc7 = 'assets/js/111--.jpg';
+    const hoverSrc7 = 'assets/imgs/444.jpg';
+    image7.addEventListener('mouseover', () => {
+      image7.src = hoverSrc7;
+    });
+    image7.addEventListener('mouseout', () => {
+      image7.src = originalSrc7;
+    });
+
+  </script>
 </body>
 
 </html>
