@@ -7,10 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inconsolata:wght@200..900&display=swap');
 
  .icn{
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-radius: 100%;
-    background-color: rgb(237, 230, 230);
+    background-color: rgb(232, 230, 230);
     
  }
  .slid{
@@ -45,6 +45,12 @@
   display: inline-block;
 }
 
+.btn-hover:hover{
+background-color: black;
+}
+.fs-8{
+  font-size: 12px;
+}
 .btn-outline-box {
   position: absolute;
   top: -10px;
@@ -65,7 +71,11 @@
 }
 
 .custom-btn:hover {
-  background-color: #FF3B2D; /* Darker red on hover */
+  background-color: #000000; /* Darker red on hover */
+}
+.custom-btn:hover .btn-outline-box{
+  border: 2px solid #000000; /* Red outline */
+
 }
 .top-content{
   top: -450px;
@@ -96,4 +106,44 @@ box-shadow: none;
 }
 .w-25 {
   width: 25% !important;
+}
+ /* Basic styling for the slider */
+ .slider {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.main-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: none;
+}
+
+.main-image img.active {
+  display: block;
+}
+
+/* Thumbnail styling */
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.thumbnails img {
+  width: 110px;
+  height: 150px;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 0.6;
+  object-fit: cover;
+  transition: opacity 0.3s;
+}
+
+.thumbnails img.active-thumbnail {
+  border: 2px solid #333;
+  opacity: 1;
 }
