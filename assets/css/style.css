@@ -20,6 +20,9 @@
       background-color:orangered;
       filter: none !important;
  }
+ .fs-10{
+  font-size: 200px ;
+ }
  .cl-org{
     background-color: orangered;
  }
@@ -73,4 +76,24 @@
 }
 .mrgn{
   margin-top: 100px;
+}
+.b-img{
+  background-image: url("../imgs/header-bg.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0px;
+  
+}
+
+.form-control{
+box-shadow: none;
+    border-radius: 0;
+    height: 45px;
+}
+.mr-3 {
+  margin-right: 1rem !important;
+}
+.w-25 {
+  width: 25% !important;
 }

@@ -35,8 +35,9 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="about.html">About us</a></li>
               <li><a class="dropdown-item" href="blogs.html">Blogs </a></li>
-              <li><a class="dropdown-item" href="#">Contact </a></li>
-              <li><a class="dropdown-item" href="#">404 Page</a></li>
+              <li><a class="dropdown-item" href="contact.html">Contact </a></li>
+              <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+              <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
 
             </ul>
           </li>
@@ -73,6 +74,9 @@
               <li><a class="dropdown-item" href="#">Forget Passward</a></li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" aria-current="page" href="contact.html">Contact us</a>
+        </li>
 
         </ul>
         <div class="d-flex gap-3" role="search">
@@ -575,84 +579,95 @@
   <script src="./assets/js//bootstrap.min.js"></script>
   <script>
 
-    const image = document.getElementById('hoverImage');
+    let image = document.getElementById('hoverImage');
     const originalSrc = 'assets/js/111--.jpg';
     const hoverSrc = 'assets/imgs/444.jpg';
     image.addEventListener('mouseover', () => {
       image.src = hoverSrc;
+
+      console.log(image.src = hoverSrc)
+      console.log(image.src = originalSrc)
     });
     image.addEventListener('mouseout', () => {
       image.src = originalSrc;
-    });
-    const image1 = document.getElementById('hoverImage1');
-    const originalSrc1 = 'assets/js/222--.jpg';
-    const hoverSrc1 = 'assets/imgs/322.jpg';
-    image1.addEventListener('mouseover', () => {
-      image1.src = hoverSrc1;
-    });
-    image.addEventListener('mouseout', () => {
-      image1.src = originalSrc1;
+
+      console.log(image.src = hoverSrc)
+      console.log(image.src = originalSrc)
     });
 
-    const image2 = document.getElementById('hoverImage2');
-    const originalSrc2 = 'assets/js/444--.jpg';
-    const hoverSrc2 = 'assets/imgs/222.jpg';
-    image2.addEventListener('mouseover', () => {
-      image2.src = hoverSrc2;
-    });
-    image.addEventListener('mouseout', () => {
-      image2.src = originalSrc2;
-    });
 
-    const image3 = document.getElementById('hoverImage3');
-    const originalSrc3 = 'assets/js/111--.jpg';
-    const hoverSrc3 = 'assets/imgs/444.jpg';
-    image3.addEventListener('mouseover', () => {
-      image3.src = hoverSrc3;
-    });
-    image3.addEventListener('mouseout', () => {
-      image3.src = originalSrc3;
-    });
 
-    const image4 = document.getElementById('hoverImage4');
-    const originalSrc4 = 'assets/js/111--.jpg';
-    const hoverSrc4 = 'assets/imgs/444.jpg';
-    image4.addEventListener('mouseover', () => {
-      image4.src = hoverSrc4;
-    });
-    image4.addEventListener('mouseout', () => {
-      image4.src = originalSrc4;
-    });
 
-    const image5 = document.getElementById('hoverImage5');
-    const originalSrc5 = 'assets/js/111--.jpg';
-    const hoverSrc5 = 'assets/imgs/444.jpg';
-    image5.addEventListener('mouseover', () => {
-      image5.src = hoverSrc5;
-    });
-    image5.addEventListener('mouseout', () => {
-      image5.src = originalSrc5;
-    });
 
-    const image6 = document.getElementById('hoverImage6');
-    const originalSrc6 = 'assets/js/111--.jpg';
-    const hoverSrc6 = 'assets/imgs/444.jpg';
-    image6.addEventListener('mouseover', () => {
-      image6.src = hoverSrc6;
-    });
-    image6.addEventListener('mouseout', () => {
-      image6.src = originalSrc6;
-    });
+    // const image1 = document.getElementById('hoverImage1');
+    // const originalSrc1 = 'assets/js/222--.jpg';
+    // const hoverSrc1 = 'assets/imgs/322.jpg';
+    // image1.addEventListener('mouseover', () => {
+    //   image1.src = hoverSrc1;
+    // });
+    // image.addEventListener('mouseout', () => {
+    //   image1.src = originalSrc1;
+    // });
 
-    const image7 = document.getElementById('hoverImage7');
-    const originalSrc7 = 'assets/js/111--.jpg';
-    const hoverSrc7 = 'assets/imgs/444.jpg';
-    image7.addEventListener('mouseover', () => {
-      image7.src = hoverSrc7;
-    });
-    image7.addEventListener('mouseout', () => {
-      image7.src = originalSrc7;
-    });
+    // const image2 = document.getElementById('hoverImage2');
+    // const originalSrc2 = 'assets/js/444--.jpg';
+    // const hoverSrc2 = 'assets/imgs/222.jpg';
+    // image2.addEventListener('mouseover', () => {
+    //   image2.src = hoverSrc2;
+    // });
+    // image.addEventListener('mouseout', () => {
+    //   image2.src = originalSrc2;
+    // });
+
+    // const image3 = document.getElementById('hoverImage3');
+    // const originalSrc3 = 'assets/js/111--.jpg';
+    // const hoverSrc3 = 'assets/imgs/444.jpg';
+    // image3.addEventListener('mouseover', () => {
+    //   image3.src = hoverSrc3;
+    // });
+    // image3.addEventListener('mouseout', () => {
+    //   image3.src = originalSrc3;
+    // });
+
+    // const image4 = document.getElementById('hoverImage4');
+    // const originalSrc4 = 'assets/js/111--.jpg';
+    // const hoverSrc4 = 'assets/imgs/444.jpg';
+    // image4.addEventListener('mouseover', () => {
+    //   image4.src = hoverSrc4;
+    // });
+    // image4.addEventListener('mouseout', () => {
+    //   image4.src = originalSrc4;
+    // });
+
+    // const image5 = document.getElementById('hoverImage5');
+    // const originalSrc5 = 'assets/js/111--.jpg';
+    // const hoverSrc5 = 'assets/imgs/444.jpg';
+    // image5.addEventListener('mouseover', () => {
+    //   image5.src = hoverSrc5;
+    // });
+    // image5.addEventListener('mouseout', () => {
+    //   image5.src = originalSrc5;
+    // });
+
+    // const image6 = document.getElementById('hoverImage6');
+    // const originalSrc6 = 'assets/js/111--.jpg';
+    // const hoverSrc6 = 'assets/imgs/444.jpg';
+    // image6.addEventListener('mouseover', () => {
+    //   image6.src = hoverSrc6;
+    // });
+    // image6.addEventListener('mouseout', () => {
+    //   image6.src = originalSrc6;
+    // });
+
+    // const image7 = document.getElementById('hoverImage7');
+    // const originalSrc7 = 'assets/js/111--.jpg';
+    // const hoverSrc7 = 'assets/imgs/444.jpg';
+    // image7.addEventListener('mouseover', () => {
+    //   image7.src = hoverSrc7;
+    // });
+    // image7.addEventListener('mouseout', () => {
+    //   image7.src = originalSrc7;
+    // });
 
   </script>
 </body>
