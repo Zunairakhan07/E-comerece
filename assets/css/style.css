@@ -23,17 +23,34 @@
  .fs-10{
   font-size: 200px ;
  }
+ .text-org-icn{
+color: orangered;
+opacity: 0.5;
+
+ }
  .cl-org{
     background-color: orangered;
  }
  .text-org{
    color: orangered;
  }
+ .text-org-light{
+  color: rgba(255, 68, 0, 0.671);
+
+ }
+ .padding {
+  padding-right: 150px;
+  font-weight: 500;
+ }
  .grey{
    color: grey;
  }
  b-grey{
   background-color: grey;
+ }
+ .light{
+  background-color: rgba(248, 248, 248, 0.584);
+
  }
  .bg-img{
   background-image: url("../imgs/counter.jpg");
@@ -44,7 +61,12 @@
   position: relative;
   display: inline-block;
 }
-
+.custom-btn-container:hover .custom-btn {
+  background-color: black;
+}
+.custom-btn-container:hover .btn-outline-box{
+  border: 2px solid #000000; /* Red outline */
+}
 .btn-hover:hover{
 background-color: black;
 }
@@ -58,25 +80,29 @@ background-color: black;
   width: 100%;
   height: 100%;
   border: 2px solid #FF5B4D; /* Red outline */
-  z-index: 0;
+  z-index: 10;
+  /* Adjust pointer events to make hover work */
+  pointer-events: none; /* Allows clicking the child without interfering */
 }
+.btn-outline-box:hover{
+  border: 2px solid #000000; /* Red outline */
 
+}
 .custom-btn {
+  position: relative;
   background-color: #FF5B4D; /* Red background */
   color: white; /* White text */
   padding: 10px 20px;
   border: none;
-  /* position: relative; */
   z-index: 1; /* Ensure it is above the border box */
 }
 
 .custom-btn:hover {
-  background-color: #000000; /* Darker red on hover */
+  background-color: black; /* Changes background color on button hover */
 }
-.custom-btn:hover .btn-outline-box{
-  border: 2px solid #000000; /* Red outline */
 
-}
+
+
 .top-content{
   top: -450px;
   left: 450px;
