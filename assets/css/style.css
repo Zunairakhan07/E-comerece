@@ -6,135 +6,226 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inconsolata:wght@200..900&display=swap');
 
- .icn{
-    height: 30px;
-    width: 30px;
-    border-radius: 100%;
-    background-color: rgb(232, 230, 230);
-    
- }
- .slid{
-     height:60px;
-      width: 60px; 
-      border-radius: 100%;
-      background-color:orangered;
-      filter: none !important;
- }
- .fs-10{
-  font-size: 200px ;
- }
- .text-org-icn{
-color: orangered;
-opacity: 0.5;
+.icn {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: rgb(232, 230, 230);
 
- }
- .cl-org{
-    background-color: orangered;
- }
- .text-org{
-   color: orangered;
- }
- .text-org-light{
+}
+
+.slid {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  background-color: orangered;
+  filter: none !important;
+}
+
+.fs-10 {
+  font-size: 200px;
+}
+
+.text-org-icn {
+  color: orangered;
+  opacity: 0.5;
+
+}
+
+.cl-org {
+  background-color: orangered;
+}
+
+.text-org {
+  color: orangered;
+}
+
+.text-org-light {
   color: rgba(255, 68, 0, 0.671);
 
- }
- .padding {
-  padding-right: 150px;
-  font-weight: 500;
- }
- .grey{
-   color: grey;
- }
- b-grey{
+}
+
+.new {
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 10px;
+}
+
+.new:after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 5rem;
+  height: 2px;
+  background-color: #fb5c42;
+  content: '';
+}
+
+.text-org-l {
+  background-color: rgba(255, 68, 0, 0.671);
+}
+
+.padding {
+  padding-right: 190px;
+
+}
+
+.mt {
+  margin-top: 70px;
+}
+
+.font-wght {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 50px;
+  font-family: "Catamaran", sans-serif;
+}
+
+.grey {
+  color: grey;
+}
+
+b-grey {
   background-color: grey;
- }
- .light{
+}
+
+
+
+.light {
   background-color: rgba(248, 248, 248, 0.584);
 
- }
- .bg-img{
+}
+.float-right {
+  float: right !important;
+  text-decoration: none;
+  outline: 0;
+  color: #fb5c42;
+}
+.btn-main {
+  background: #fb5c42;
+  color: #fff !important;
+  border-color: #fb5c42;
+}
+.btn {
+  font-size: 18px;
+  letter-spacing: .5px;
+  padding: 14px 35px;
+  text-transform: capitalize;
+  font-weight: 600;
+  border-radius: 0px;
+  border: 2px solid transparent;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.bg-img {
   background-image: url("../imgs/counter.jpg");
   background-size: cover;
+  height: 430px;
 
- }
- .custom-btn-container {
+}
+
+.custom-btn-container {
   position: relative;
   display: inline-block;
 }
+
 .custom-btn-container:hover .custom-btn {
   background-color: black;
 }
-.custom-btn-container:hover .btn-outline-box{
-  border: 2px solid #000000; /* Red outline */
+
+.custom-btn-container:hover .btn-outline-box {
+  border: 2px solid #000000;
+  /* Red outline */
 }
-.btn-hover:hover{
-background-color: black;
+
+.btn-hover:hover {
+  background-color: black;
 }
-.fs-8{
+
+.fs-8 {
   font-size: 12px;
 }
+
 .btn-outline-box {
   position: absolute;
   top: -10px;
   left: -10px;
   width: 100%;
   height: 100%;
-  border: 2px solid #FF5B4D; /* Red outline */
+  border: 2px solid #FF5B4D;
+  /* Red outline */
   z-index: 10;
   /* Adjust pointer events to make hover work */
-  pointer-events: none; /* Allows clicking the child without interfering */
+  pointer-events: none;
+  /* Allows clicking the child without interfering */
 }
-.btn-outline-box:hover{
-  border: 2px solid #000000; /* Red outline */
+
+.btn-outline-box:hover {
+  border: 2px solid #000000;
+  /* Red outline */
 
 }
+
 .custom-btn {
   position: relative;
-  background-color: #FF5B4D; /* Red background */
-  color: white; /* White text */
+  background-color: #FF5B4D;
+  /* Red background */
+  color: white;
+  /* White text */
   padding: 10px 20px;
   border: none;
-  z-index: 1; /* Ensure it is above the border box */
+  z-index: 1;
+  /* Ensure it is above the border box */
 }
 
 .custom-btn:hover {
-  background-color: black; /* Changes background color on button hover */
+  background-color: black;
+  /* Changes background color on button hover */
 }
 
 
 
-.top-content{
+.top-content {
   top: -450px;
   left: 450px;
 }
-.font{
+
+.font {
   font-family: "Archivo Black", sans-serif;
 }
-.mrgn{
+
+.mrgn {
   margin-top: 100px;
 }
-.b-img{
+
+.b-img {
   background-image: url("../imgs/header-bg.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 60px 0px;
-  
+
 }
 
-.form-control{
-box-shadow: none;
-    border-radius: 0;
-    height: 45px;
+.form-control {
+  box-shadow: none;
+  border-radius: 0;
+  height: 45px;
 }
+
 .mr-3 {
   margin-right: 1rem !important;
 }
+
 .w-25 {
   width: 25% !important;
 }
- /* Basic styling for the slider */
- .slider {
+
+/* Basic styling for the slider */
+.slider {
   width: 600px;
   margin: auto;
   text-align: center;
