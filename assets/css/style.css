@@ -107,6 +107,9 @@ b-grey {
   color: #fff !important;
   border-color: #fb5c42;
 }
+.btn-block:hover{
+  background-color: orangered;
+}
 .btn {
   font-size: 18px;
   letter-spacing: .5px;
@@ -144,6 +147,7 @@ b-grey {
 .btn-hover:hover {
   background-color: black;
 }
+
 
 .fs-8 {
   font-size: 12px;
@@ -263,4 +267,12 @@ b-grey {
 .thumbnails img.active-thumbnail {
   border: 2px solid #333;
   opacity: 1;
+}
+.f-padding{
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.l-color:hover{
+  color: #fb5c42;
 }
