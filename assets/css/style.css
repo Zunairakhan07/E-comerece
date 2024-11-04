@@ -128,7 +128,20 @@ b-grey {
   background-size: cover;
   height: 430px;
 
+
 }
+.button{
+  background-color: #fb5c42;
+  padding: 10px;
+  border: 1px solid orangered;
+  color: white;
+}
+.button:hover{
+  background-color: white;
+  color: #000000;
+}
+
+
 
 .custom-btn-container {
   position: relative;
@@ -209,6 +222,8 @@ b-grey {
   background-image: url("../imgs/header-bg.jpg");
   background-position: 50% 50%;
   background-size: cover;
+  height: 100%;
+  overflow: hidden;
   background-repeat: no-repeat;
   padding: 60px 0px;
 
